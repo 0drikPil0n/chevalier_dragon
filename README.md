@@ -13,9 +13,10 @@ classDiagram
     
     
     class Dragon{
+        +type de dragon: str
         +point de vie : int
-        +point d'attaque
-        
+        +point d'attaque : int
+        +attaques: list
         }
 
 
