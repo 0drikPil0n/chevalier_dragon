@@ -22,19 +22,20 @@ classDiagram
 
     class Chevalier{
         - nom: str
-        - arme: épée
+        + armes: str
         + point de vie : int
-        + point de dommage
+        + point d'attque: int
         - protection : bouclier
-    
-    }
+        }
+
 
     class Combat{
         - dragon: Dragon
         - chevalier: Chevalier
-        
-    
-    
+        + vainqueur(chevalier: Chevalier, dragon: Dragon)
+        + afficher_vainceur()
         }
+Combat "1" <-- "1" Dragon: Participe
+Combat "1" <-- "1" Chevalier: Participe
 ```
 
